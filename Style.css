@@ -1,0 +1,165 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+/* Style du body */
+body {
+    background-image: url('table.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Style pour le titre */
+#gameTitle {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Style pour le sous-titre */
+#subTitle {
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+/* Style du meilleur score */
+#bestScore {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Style pour le score et le timer */
+#score, #timer {
+    position: absolute;
+    top: 10px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+#score {
+    left: 10px;
+}
+
+#timer {
+    right: 10px;
+}
+
+/* Positionnement du bouton Commencer */
+.start-button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #218838;
+}
+
+/* Positionnement du piano */
+.piano {
+    width: 700px;
+    position: relative;
+    margin-top: 10px;
+}
+
+/* Touche blanche (becarre) */
+.becarre {
+    position: absolute;
+    border: 1px solid black;
+    width: 99px;
+    height: 400px;
+    background-color: white;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+#do { left: 0px; }
+#re { left: 100px; }
+#mi { left: 200px; }
+#fa { left: 300px; }
+#sol { left: 400px; }
+#la { left: 500px; }
+#si { left: 600px; }
+
+/* Touche noire (diese) */
+.diese {
+    position: absolute;
+    border: 1px solid black;
+    width: 49px;
+    height: 250px;
+    background-color: black;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+#do-diese { left: 75px; }
+#re-diese { left: 175px; }
+#fa-diese { left: 375px; }
+#sol-diese { left: 475px; }
+#la-diese { left: 575px; }
+
+/* Hover et Active sur les touches */
+.becarre:hover, .diese:hover {
+    background-color: orange;
+}
+
+/* Lorsqu'une touche est enfoncée */
+.becarre:active, .diese:active {
+    transform: translateY(10px);
+}
+
+.note-name {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.diese .note-name {
+    color: white;
+    font-size: 14px;
+}
+
+/* Footer pour le sous-titre "by Nicolas HOULES" */
+#footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}

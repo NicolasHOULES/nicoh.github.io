@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Titre du jeu -->
+<h1 id="gameTitle">Jeu du Piano</h1>
+
+<!-- Sous-titre avec les instructions -->
+<h2 id="subTitle">Cliquez sur commencer pour commencer le jeu, quand la touche est verte cliquez sur cette touche pour gagner 10 points. Attention la touche verte change rapidement et si vous vous trompez de touche -5 points. Bonne chance.</h2>
+
+<!-- Meilleur score -->
+<div id="bestScore">Meilleur score: 0</div>
+
+<!-- Score actuel et Timer -->
+<div id="score">Score: 0</div>
+<div id="timer">Temps restant: 30s</div>
+
+<!-- Bouton Commencer -->
+<button id="startButton" class="start-button">Commencer</button>
+
+<!-- Piano -->
+<div class="piano">
+    <div id="do" class="becarre">
+        <div class="cercle"></div>
+        <span class="note-name">Do</span>
+    </div>
+    <div id="re" class="becarre">
+        <div class="cercle"></div>
+        <span class="note-name">Ré</span>
+    </div>
+    <div id="mi" class="becarre">
+        <div class="cercle"></div>
+        <span class="note-name">Mi</span>
+    </div>
+    <div id="fa" class="becarre">
+        <div class="cercle"></div>
+        <span class="note-name">Fa</span>
+    </div>
+    <div id="sol" class="becarre">
+        <div class="cercle"></div>
+        <span class="note-name">Sol</span>
+    </div>
+    <div id="la" class="becarre">
+        <div class="cercle"></div>
+        <span class="note-name">La</span>
+    </div>
+    <div id="si" class="becarre">
+        <div class="cercle"></div>
+        <span class="note-name">Si</span>
+    </div>
+
+    <div id="do-diese" class="diese">
+        <div class="cercle"></div>
+        <span class="note-name">Do#</span>
+    </div>
+    <div id="re-diese" class="diese">
+        <div class="cercle"></div>
+        <span class="note-name">Ré#</span>
+    </div>
+    <div id="fa-diese" class="diese">
+        <div class="cercle"></div>
+        <span class="note-name">Fa#</span>
+    </div>
+    <div id="sol-diese" class="diese">
+        <div class="cercle"></div>
+        <span class="note-name">Sol#</span>
+    </div>
+    <div id="la-diese" class="diese">
+        <div class="cercle"></div>
+        <span class="note-name">La#</span>
+    </div>
+</div>
+
+<!-- Sous-titre "by Nicolas HOULES" -->
+<footer id="footer">
+    <p>by Nicolas HOULES</p>
+</footer>
+
+<script src="piano.js"></script>
+
+</body>
+</html>

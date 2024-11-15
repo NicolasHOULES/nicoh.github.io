@@ -1,0 +1,59 @@
+/* Boîte englobante du piano */
+#piano {
+    width: 700px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Notes bécarres */
+.becarre {
+    position: absolute;
+    width: 70px;   /* Taille ajustée */
+    height: 200px; /* Taille ajustée */
+    border: 1px solid black;
+    background-color: white;
+    z-index: 1;
+}
+
+.becarre:hover {
+    background-color: orange;
+}
+
+.becarre:active {
+    background-color: red;
+}
+
+/* Notes dièses */
+.diese {
+    position: absolute;
+    width: 35px;    /* Taille ajustée */
+    height: 140px;  /* Taille ajustée */
+    background-color: black;
+    border: 1px solid black;
+    z-index: 2;
+}
+
+.diese:hover {
+    background-color: orange;
+}
+
+.diese:active {
+    background-color: red;
+}
+
+/* Positionnement horizontal des touches */
+#do { left: 0px; }
+#re { left: 70px; }
+#mi { left: 140px; }
+#fa { left: 210px; }
+#sol { left: 280px; }
+#la { left: 350px; }
+#si { left: 420px; }
+
+#do-diese { left: 50px; }
+#re-diese { left: 120px; }
+#fa-diese { left: 190px; }
+#sol-diese { left: 260px; }
+#la-diese { left: 330px; }
+    
